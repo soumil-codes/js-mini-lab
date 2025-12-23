@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+}
+.bigcontainer{
+    margin: 10vh 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.174);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.container label{
+    padding-top: 20px;
+}
+
+.container input{
+    padding: 10px;
+    border-radius: 10px;
+}

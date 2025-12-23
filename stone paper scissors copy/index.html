@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Player Section -->
+    <div id="player">
+      <div id="stone1"><img data-choice="0" src="/zzz-items/rock.png" alt="rock" onclick="playGame(this)" /></div>
+      <div id="paper1"><img data-choice="1" src="/zzz-items/paper.png" alt="paper" onclick="playGame(this)" /></div>
+      <div id="scissors1"><img data-choice="2" src="/zzz-items/scissors.png" alt="scissors" onclick="playGame(this)" /></div>
+    </div>
+
+    <!-- Game Result UI -->
+    <div class="result-card">
+      <h1>Rock Paper Scissors</h1>
+
+      <div id="choices">
+        <div>
+          <p>Player</p>
+          <p id="playerChoice">Choose</p>
+        </div>
+        <div>
+          <p>Computer</p>
+          <p id="computerChoice">Choose</p>
+        </div>
+      </div>
+
+      <div id="result"><p>Play something!</p></div>
+
+      <div id="score"><p id="scoreValue">0 - 0</p></div>
+
+      <div class="options">
+        <button id="reset" onclick="reset()">Reset</button>
+        <label class="spam-toggle">
+          <input type="checkbox" id="spamToggle" />
+          Spam Mode
+        </label>
+      </div>
+    </div>
+
+    <!-- Computer Section -->
+    <div class="computer">
+      <div id="stone2"><img src="/zzz-items/rock.png" alt="rock" /></div>
+      <div id="paper2"><img src="/zzz-items/paper.png" alt="paper" /></div>
+      <div id="scissors2"><img src="/zzz-items/scissors.png" alt="scissors" /></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

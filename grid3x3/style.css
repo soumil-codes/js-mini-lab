@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container input{
+    width: 32.5vw;
+    height: 33vh;
+    margin: 0px;
+    font-size: 6rem;
+    padding-left: 15vw;
+    /* background: #151515; */
+}

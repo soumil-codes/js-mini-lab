@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter {
+    color: black;
+    font-size: 90px;
+}
+
+.btns button {
+    width: 200px;
+    padding: 15px 25px;
+    margin: 0px 20px;
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.btns button:hover {
+    font-weight: 600;
+    opacity: 1
+}
+
+@keyframes reset {
+    0% {color: black;}
+    50% {color: gold;}
+    100% {color: black;}
+}
+
+@keyframes increment {
+    0% {color: black;}
+    50% {color: greenyellow;}
+    100% {color: black;}
+}
+
+@keyframes decrement {
+    0% {color: black;}
+    50% {color: red;}
+    100% {color: black;}
+}
+
+.reset-animate{
+    animation: reset .5s;
+}
+.inc-animate{
+    animation: increment .5s;
+}
+.dec-animate{
+    animation: decrement 0.5s;
+}

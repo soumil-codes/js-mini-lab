@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="player">
+            <div id="stone1"><img data-choice="0" src="/zzz-items/rock.png" alt="rock" onclick="playGame(this)"></div>
+            <div id="paper1"><img data-choice="1" src="/zzz-items/paper.png" alt="paper" onclick="playGame(this)"></div>
+            <div id="scissors1"><img data-choice="2" src="/zzz-items/scissors.png" alt="scissors" onclick="playGame(this)"></div>
+        </div>
+        <div class="result-card">
+            <h1> Rock Paper scissors</h1>
+            <div id="choices">
+                <div>
+                    <p>Player</p>
+                    <p id="playerChoice">Choose</p>
+                </div>
+                <div>
+                    <p>Computer</p>
+                    <p  id="computerChoice">Choose</p>
+                </div>
+            </div>
+            <div id="result">
+                <p>play something!</p>
+            </div>
+            <div id="score">
+                <p id="scoreValue">0 - 0</p>
+            </div>
+            <button id = reset onclick="reset()">reset</button>
+        </div>
+        <div class="computer">
+            <div id="stone2"><img src="/zzz-items/rock.png" alt="rock"></div>
+            <div id="paper2"><img src="/zzz-items/paper.png" alt="paper"></div>
+            <div id="scissors2"><img src="/zzz-items/scissors.png" alt="scissors"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
